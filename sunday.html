@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sunday event </title>
+</head>
+<body>
+    <h1 style="background-color: blue; text-align: center;font-family: 'Courier New', Courier, monospace;color: gold;">Java script lectures</h1>
+    <!-- <button onclick="myfunc()">Click</button>
+
+    <h1 id="header">This is Header </h1>
+    <input type="text" value="copy me" onkeypress="mycopyfunc()"> -->
+<!-- <img src="../2022.08.2/download.jpg" alt="" onerror="errfunc()"> -->
+<div id="myDiv" onmouseover="myFuncOver()" style="height: 200px;width:200px;background-color: aquamarine;">something in dive box</div>
+<h1 id="showRN"></h1>
+</body>
+<script>
+var thediv = document.getElementById('myDiv');
+var showRandom = document.getElementById('showRN');
+
+function myFuncOver(){
+
+thediv.style.color="red"
+thediv.style.padding="30px"
+thediv.style.backgroundColor="green"
+thediv.style.fontFamily="cursive"
+thediv.style.fontSize="30px"
+var a = Math.random();
+
+var b =a*5;
+
+var  c = Math.floor(b)+1
+
+showRandom.innerHTML=c;
+
+}
+
+
+
+
+// function errfunc(){
+
+// alert('invalid path')
+
+// }
+
+
+// var thehead = document.getElementById('header')
+
+// function  myfunc(){
+
+// alert('button click')
+// thehead.style.color="red"
+// }
+
+// function mycopyfunc(){ 
+
+//     alert('text copied')
+// }
+
+// function mycopyfunc(){
+
+// alert('you pressed a key')
+// } 
+
+
+</script>
+
+
+
+</html>
